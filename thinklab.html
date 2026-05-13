@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What is ThinkLab? | BrightPath Consulting</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-text">BrightPath<span class="logo-accent">Consulting</span></span>
+            </a>
+            <div class="nav-buttons">
+                <a href="index.html#who-we-are" class="nav-btn">Who We Are</a>
+                <a href="index.html#what-we-offer" class="nav-btn">What We Offer</a>
+                <a href="thinklab.html" class="nav-btn nav-btn-special active">What is ThinkLab?</a>
+                <a href="index.html#faq" class="nav-btn">FAQ</a>
+                <a href="index.html#contact" class="nav-btn nav-btn-contact">Contact</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="section section-dark page-hero">
+            <div class="container">
+                <h1>What is ThinkLab?</h1>
+                <p class="subheadline">A teacher training program that transforms how classrooms think.</p>
+            </div>
+        </section>
+
+        <section class="section section-light">
+            <div class="container">
+                <h2>The Problem We Solve</h2>
+                <p>Students are taught to memorize facts and follow instructions, but rarely to question, analyze, or create solutions. In a world that demands innovation and adaptability, this leaves them unprepared. ThinkLab was created to close that gap by equipping teachers with explicit methods for teaching critical thinking across all subjects.</p>
+                <div class="problem-stat">
+                    <strong>Only 9%</strong> of 15-year-olds globally can reliably distinguish fact from opinion (OECD PISA 2018).
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-accent">
+            <div class="container">
+                <h2>How ThinkLab Works</h2>
+                <div class="phases">
+                    <div class="phase-card">
+                        <div class="phase-number">1</div>
+                        <h3>Foundations Workshop</h3>
+                        <p>A full-day immersive experience where teachers learn core thinking routines: See-Think-Wonder, Socratic questioning, and how to design open-ended challenges.</p>
+                    </div>
+                    <div class="phase-card">
+                        <div class="phase-number">2</div>
+                        <h3>Toolkit & Lesson Makeovers</h3>
+                        <p>Four weeks of ready-to-use strategies. Teachers redesign two existing lessons to include critical thinking – no extra content, just better questions.</p>
+                    </div>
+                    <div class="phase-card">
+                        <div class="phase-number">3</div>
+                        <h3>Classroom Coaching</h3>
+                        <p>One month of in-class support. Our team observes, gives feedback, and facilitates peer observation trios so new habits stick.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-light">
+            <div class="container">
+                <h2>What Makes ThinkLab Different?</h2>
+                <ul class="benefits-list">
+                    <li><strong>Practical, not theoretical.</strong> Teachers leave with ready-to-use tools, not just concepts.</li>
+                    <li><strong>Fits existing curriculum.</strong> No new subjects or textbooks – just smarter delivery.</li>
+                    <li><strong>Minimal disruption.</strong> Uses Professional Development days and short after-school sessions.</li>
+                    <li><strong>Measurable impact.</strong> Pre- and post-program student reasoning tasks show growth.</li>
+                    <li><strong>Creates a school-wide culture.</strong> When all teachers use thinking routines, students build the habit across classes.</li>
+                </ul>
+                <a href="index.html#contact" class="btn btn-primary" style="margin-top: 2rem;">Bring ThinkLab to Your School</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-logo">
+                <span class="logo-text">BrightPath<span class="logo-accent">Consulting</span></span>
+                <p>We need a generation of thinkers, not of workers.</p>
+            </div>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="index.html#who-we-are">Who We Are</a>
+                <a href="index.html#what-we-offer">What We Offer</a>
+                <a href="thinklab.html">What is ThinkLab?</a>
+                <a href="index.html#faq">FAQ</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 BrightPath Consulting. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navButtons = document.querySelector('.nav-buttons');
+        hamburger.addEventListener('click', () => {
+            navButtons.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
