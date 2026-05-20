@@ -4,6 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>What is ThinkLab? | BrightPath Consulting</title>
+
+    <!-- SEO -->
+    <meta name="description" content="ThinkLab is a practical teacher training program by BrightPath Consulting that builds critical thinking skills in every classroom.">
+    <meta name="keywords" content="ThinkLab, critical thinking, teacher training, BrightPath Consulting, educación, pensamiento crítico">
+    <meta name="author" content="BrightPath Consulting">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="What is ThinkLab? | BrightPath Consulting">
+    <meta property="og:description" content="A teacher training program that transforms how classrooms think.">
+    <meta property="og:type" content="website">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="logo.png">
+
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
@@ -11,7 +25,7 @@
     <nav class="navbar">
         <div class="nav-container">
             <a href="index.html" class="logo">
-                <span class="logo-text">BrightPath<span class="logo-accent">Consulting</span></span>
+                <img src="logo.png" alt="BrightPath Consulting" style="height:50px;">
             </a>
             <div class="nav-buttons">
                 <a href="index.html#who-we-are" class="nav-btn">Who We Are</a>
@@ -39,7 +53,7 @@
                 <h2>The Problem We Solve</h2>
                 <p>Students are taught to memorize facts and follow instructions, but rarely to question, analyze, or create solutions. In a world that demands innovation and adaptability, this leaves them unprepared. ThinkLab was created to close that gap by equipping teachers with explicit methods for teaching critical thinking across all subjects.</p>
                 <div class="problem-stat">
-                    <strong>Only 9%</strong> of 15-year-olds globally can reliably distinguish fact from opinion (OECD PISA 2018).
+                    <strong>Only 9%</strong> of 15 year olds globally can reliably distinguish fact from opinion (OECD PISA 2018).
                 </div>
             </div>
         </section>
@@ -51,17 +65,17 @@
                     <div class="phase-card">
                         <div class="phase-number">1</div>
                         <h3>Foundations Workshop</h3>
-                        <p>A full-day immersive experience where teachers learn core thinking routines: See-Think-Wonder, Socratic questioning, and how to design open-ended challenges.</p>
+                        <p>A full day immersive experience where teachers learn core thinking routines: See Think Wonder, Socratic questioning, and how to design open ended challenges.</p>
                     </div>
                     <div class="phase-card">
                         <div class="phase-number">2</div>
                         <h3>Toolkit & Lesson Makeovers</h3>
-                        <p>Four weeks of ready-to-use strategies. Teachers redesign two existing lessons to include critical thinking – no extra content, just better questions.</p>
+                        <p>Four weeks of ready to use strategies. Teachers redesign two existing lessons to include critical thinking – no extra content, just better questions.</p>
                     </div>
                     <div class="phase-card">
                         <div class="phase-number">3</div>
                         <h3>Classroom Coaching</h3>
-                        <p>One month of in-class support. Our team observes, gives feedback, and facilitates peer observation trios so new habits stick.</p>
+                        <p>One month of in class support. Our team observes, gives feedback, and facilitates peer observation trios so new habits stick.</p>
                     </div>
                 </div>
             </div>
@@ -71,11 +85,11 @@
             <div class="container">
                 <h2>What Makes ThinkLab Different?</h2>
                 <ul class="benefits-list">
-                    <li><strong>Practical, not theoretical.</strong> Teachers leave with ready-to-use tools, not just concepts.</li>
+                    <li><strong>Practical, not theoretical.</strong> Teachers leave with ready to use tools, not just concepts.</li>
                     <li><strong>Fits existing curriculum.</strong> No new subjects or textbooks – just smarter delivery.</li>
-                    <li><strong>Minimal disruption.</strong> Uses Professional Development days and short after-school sessions.</li>
-                    <li><strong>Measurable impact.</strong> Pre- and post-program student reasoning tasks show growth.</li>
-                    <li><strong>Creates a school-wide culture.</strong> When all teachers use thinking routines, students build the habit across classes.</li>
+                    <li><strong>Minimal disruption.</strong> Uses Professional Development days and short after school sessions.</li>
+                    <li><strong>Measurable impact.</strong> Pre and post program student reasoning tasks show growth.</li>
+                    <li><strong>Creates a school wide culture.</strong> When all teachers use thinking routines, students build the habit across classes.</li>
                 </ul>
                 <a href="index.html#contact" class="btn btn-primary" style="margin-top: 2rem;">Bring ThinkLab to Your School</a>
             </div>
@@ -104,8 +118,16 @@
     <script>
         const hamburger = document.getElementById('hamburger');
         const navButtons = document.querySelector('.nav-buttons');
+
         hamburger.addEventListener('click', () => {
             navButtons.classList.toggle('active');
+        });
+
+        // Cierra el menú al hacer clic en cualquier enlace
+        document.querySelectorAll('.nav-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                navButtons.classList.remove('active');
+            });
         });
     </script>
 </body>
