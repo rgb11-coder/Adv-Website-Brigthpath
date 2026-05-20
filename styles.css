@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
     line-height: 1.6;
@@ -132,6 +136,13 @@ a {
 
 .hero-content {
     max-width: 800px;
+}
+
+.hero-img-logo {
+    max-height: 120px;
+    width: auto;
+    margin-bottom: 1.5rem;
+    filter: drop-shadow(0 4px 16px rgba(255,127,63,0.25));
 }
 
 .hero-logo {
@@ -376,6 +387,78 @@ a {
     text-align: center;
 }
 
+/* ===== SURVEY SECTION ===== */
+.survey-charts {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 3rem;
+}
+
+.survey-chart {
+    text-align: center;
+    max-width: 220px;
+}
+
+.survey-chart h3 {
+    color: #0A1F3F;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    min-height: 3em;
+}
+
+.chart-legend {
+    margin-top: 1rem;
+    font-size: 0.85rem;
+    color: #333;
+}
+
+.chart-legend span {
+    display: inline-block;
+    margin-right: 0.5rem;
+}
+
+.chart-legend span span {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 2px;
+    margin-right: 4px;
+    vertical-align: middle;
+}
+
+.survey-themes {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.survey-themes h3 {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #0A1F3F;
+}
+
+.survey-themes ul {
+    list-style: none;
+    padding: 0;
+}
+
+.survey-themes li {
+    background: white;
+    padding: 0.8rem 1rem;
+    margin-bottom: 0.6rem;
+    border-left: 4px solid #FF7F3F;
+    border-radius: 5px;
+}
+
+.survey-note {
+    text-align: center;
+    font-style: italic;
+    margin-top: 1rem;
+    color: #666;
+}
+
 /* ===== FAQ ===== */
 .faq-list {
     max-width: 800px;
@@ -506,77 +589,7 @@ a {
     font-size: 0.9rem;
     color: #888;
 }
-/* ===== SURVEY SECTION ===== */
-.survey-charts {
-    display: flex;
-    gap: 2rem;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-bottom: 3rem;
-}
 
-.survey-chart {
-    text-align: center;
-    max-width: 220px;
-}
-
-.survey-chart h3 {
-    color: #0A1F3F;
-    font-size: 1rem;
-    margin-bottom: 1rem;
-    min-height: 3em;
-}
-
-.chart-legend {
-    margin-top: 1rem;
-    font-size: 0.85rem;
-    color: #333;
-}
-
-.chart-legend span {
-    display: inline-block;
-    margin-right: 0.5rem;
-}
-
-.chart-legend span span {
-    display: inline-block;
-    width: 12px;
-    height: 12px;
-    border-radius: 2px;
-    margin-right: 4px;
-    vertical-align: middle;
-}
-
-.survey-themes {
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-.survey-themes h3 {
-    text-align: center;
-    margin-bottom: 1rem;
-    color: #0A1F3F;
-}
-
-.survey-themes ul {
-    list-style: none;
-    padding: 0;
-}
-
-.survey-themes li {
-    background: white;
-    padding: 0.8rem 1rem;
-    margin-bottom: 0.6rem;
-    border-left: 4px solid #FF7F3F;
-    border-radius: 5px;
-}
-
-.survey-note {
-    text-align: center;
-    font-style: italic;
-    margin-top: 1rem;
-    color: #666;
-}
 /* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {
     .nav-buttons {
